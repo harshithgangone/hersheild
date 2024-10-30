@@ -8,10 +8,10 @@
     box-sizing: border-box;
     font-family: "Barlow", sans-serif;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
-    
     background-color: #0d0d0d;
     color: #fff;
     overflow-x: hidden;
@@ -98,6 +98,7 @@ body {
     position: relative;
     background: radial-gradient(circle at center , rgba(0, 152, 255, 0.3), #0d0d0d 70%);
     clip-path: inset(0 0 0 0); 
+    border-bottom:3px solid #0098FF ;
   }
   
   .hero h1 {
@@ -142,6 +143,7 @@ body {
     radial-gradient(circle at 80% 50%, rgba(255, 0, 152, 0.3), transparent 60%);
     background-color: #0d0d0d; 
     text-align: center;
+    border-bottom:3px solid purple ;
   }
   
   .feature-cards {
@@ -150,7 +152,7 @@ body {
     flex-wrap: wrap;
   }
   
-  .card {
+.card{
     background-color: #ffffff;
     color: #0d2b3f;
     padding: 20px;
@@ -162,6 +164,11 @@ body {
     border-radius: 10px;
     align-items: center;
     width: 27%;
+}
+.use-case-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   .card img{
     width: 150px;
@@ -170,10 +177,144 @@ body {
   .card p{
     font-weight: 400;
   }
+.usecase{
+    text-align: center;
+    padding: 90px 20px;
+    background: radial-gradient(circle at center , rgba(0, 152, 255, 0.3), #0d0d0d 60%);
+    border-bottom:3px solid #0098FF ;
+}
+
+.reviews{
+    padding: 90px 20px;
+    background: radial-gradient(circle at left , rgba(0, 152, 255, 0.3), #0d0d0d 50%);
+}
+.reviews .review-cards{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 30px;
+}
+.review-cards .rcards{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #0d2b3f;
+    padding: 20px;
+    border-radius: 12px;
+    
+    box-shadow: 2px 2px 16px purple;
+}
+.rcards .img-comment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.rcards i{
+    place-self: end;
+}
+.img-comment img{
+    width: 60px;
+    border-radius: 50%;
+}
   /* Footer */
-  footer {
+footer{
+    padding: 20px;
+    background: 
+    radial-gradient(circle at 20% 50%, rgba(0, 152, 255, 0.3), transparent 60%), 
+    radial-gradient(circle at 80% 50%, rgba(21, 109, 176, 0.3), transparent 60%);
+    background-color: #0d0d0d; 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  h2{
+    margin: 20px;
+    margin-top: 0px;
+  }
+
+  .about img{
+    width: 140px;
+  }
+ 
+  .footer-content{
+    background-color: #31719c;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    width: 80%;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  .footer-content button{
+    background-color: #ffffff;
+    &:hover{
+        background-color: #ffffffbc;
+    }
+  }
+  .footer-content h3{
+    font-size: 30px;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 92px;
+    margin-top: 70px;
+  }
+  .footersection{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 12px;
+    font-weight: 200;
+  }
+  .bottom{
+    width: 100%;
     text-align: center;
     padding: 20px;
-    background-color: #1c1c1c;
+  }
+  .bottom p{
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: 200;
+  }
+  .inputfields input{
+    height: 30px;
+    outline: none;
+    border: none;
+    background:transparent;
+    border-bottom: 3px solid white;
+    color: white;
+    padding: 0px;
+    font-size: 12px;
+  }
+  .inputfields button{
+    padding: 7px;
+    cursor: pointer;
+  }
+  .inputfields p{
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .support p{
+    cursor: pointer;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.8s ease-in-out;
   }
   
+  .fade-in.show {
+    opacity: 3;
+    transform: translateY(0);
+  }
