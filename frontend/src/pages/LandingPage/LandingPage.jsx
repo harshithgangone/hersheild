@@ -1,107 +1,101 @@
-import React from 'react'
-import "./LandingPage.css"
+import React from "react";
+import "./LandingPage.css";
+import assets from "../../assets/assests";
 const LandingPage = () => {
   return (
     <body>
-       <header className="navbar">
-    <div className="logo">🛡️ Shield</div>
-    <nav>
-      <ul className="nav-links">
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Use Case</a></li>
-        <li><a href="#">Company</a></li>
-        <li><a href="#">Resources</a></li>
-      </ul>
-    </nav>
-    <a href="#" className="contact-btn">Contact Us</a>
-  </header>
+      <header className="navbar">
+        <div className="logo"><img style={{width:"180px"}} src={assets.logo} alt="" /></div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#usecase">Use Case</a>
+            </li>
+            <li>
+              <a href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <p href="#signup" className="btn">
+                Sign Up
+              </p>
+      </header>
 
-  <section className="hero">
-    <h1>Protecting Your Digital Future</h1>
-    <p>Specializing in Cyber Recovery, Cyber Resilience, and Threat Defense Solutions.</p>
-    <button className="btn-learn-more">Learn More</button>
-  </section>
+      <section className="hero">
+        <h1>Your Safety, Our Priority</h1>
+        <p>
+          Empowering women with technology to ensure safety and rapid response
+          during emergencies.
+        </p>
+        <button className="btn-learn-more">Get Started <img src={assets.rightIcon} alt="" /></button>
+      </section>
 
-  <section className="services">
-    <h2>Our Best Cybersecurity Services</h2>
-    <div className="service-cards">
-      <div className="card">
-        <img src="cyber-resilience.png" alt="Cyber Resilience"/>
-        <h3>Cyber Resilience</h3>
-        <p>Ensure business continuity and minimize downtime.</p>
-      </div>
-      <div className="card">
-        <img src="cyber-recovery.png" alt="Cyber Recovery"/>
-        <h3>Cyber Recovery</h3>
-        <p>Recover from attacks quickly with proactive measures.</p>
-      </div>
-      <div className="card">
-        <img src="threat-defense.png" alt="Threat Defense"/>
-        <h3>Threat Defense</h3>
-        <p>Stay ahead of evolving threats with advanced solutions.</p>
-      </div>
-    </div>
-  </section>
+      <section id="features" className="features">
+        <h2>HerShield Core Features</h2>
+        <div className="feature-cards">
+          <div className="card">
+            <h3>Gender & Threat Detection</h3>
+            <img src={assets.img1} alt="" />
+            <p>
+              Our app utilizes advanced AI to detect the gender and identify
+              potential threats in real-time.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Contact Nearest Police Station</h3>
+            <img src={assets.img2} alt="" />
+            <p>
+              Instantly send your device and location details to the closest
+              police station for rapid tracking and response.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Request Tracking</h3>
+            <img src={assets.img4} alt="" />
+            <p>
+              Share your real-time location with authorized police officers to
+              ensure you’re always monitored for safety.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Contact Nearest Hospital</h3>
+            <img src={assets.img3} alt="" />
+            <p>
+              Quickly connect to the nearest hospital for medical emergencies
+              with a single tap.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Manual Alert</h3>
+            <img src={assets.img5} alt="" />
+            <p>
+              Trigger an instant SOS alert manually to notify your emergency
+              contacts and law enforcement.
+            </p>
+          </div>
+        </div>
+      </section>
 
-  <section className="trusted">
-    <h2>Trusted by over 2 Million worldwide</h2>
-    <div className="logos">
-      <img src="partner1.png" alt="Rocket"/>
-      <img src="partner2.png" alt="RankMate"/>
-      <img src="partner3.png" alt="Skrill"/>
-      <img src="partner4.png" alt="Slider"/>
-    </div>
-  </section>
-
-  <section className="use-case">
-    <h2>Use Case</h2>
-    <div className="use-cards">
-      <div className="use-card">Identity</div>
-      <div className="use-card">Cloud</div>
-      <div className="use-card">Application</div>
-      <div className="use-card">Network</div>
-    </div>
-  </section>
-
-  <section className="pricing">
-    <h2>Pricing for our best cyber services</h2>
-    <div className="pricing-tiers">
-      <div className="tier basic">
-        <h3>Basic</h3>
-        <p>$29/month</p>
-        <ul>
-          <li>24/7 Support</li>
-          <li>Basic Security Features</li>
-        </ul>
-        <button>Buy Now</button>
-      </div>
-      <div className="tier standard">
-        <h3>Standard</h3>
-        <p>$79/month</p>
-        <ul>
-          <li>Extended Features</li>
-          <li>Comprehensive Monitoring</li>
-        </ul>
-        <button>Buy Now</button>
-      </div>
-      <div className="tier premium">
-        <h3>Premium</h3>
-        <p>$149/month</p>
-        <ul>
-          <li>All-Inclusive Package</li>
-          <li>Complete Threat Protection</li>
-        </ul>
-        <button>Buy Now</button>
-      </div>
-    </div>
-  </section>
-
-  <footer className="footer">
-    <p>© 2024 Shield - Secure your digital future today!</p>
-  </footer>
-
+      <footer>
+        <div className="footer-content">
+          <h3>Secure Your Safety Today!</h3>
+          <p>
+            Join HerShield to ensure your safety anytime, anywhere. Together, we
+            can make a difference.
+          </p>
+          <button className="btn-learn-more">Join Now</button>
+        </div>
+        <div className="footer-links">
+          <p>&copy; 2024 HerShield. All Rights Reserved.</p>
+          <a href="#contact">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </footer>
     </body>
-  )
-}
+  );
+};
 
-export default LandingPage
+export default LandingPage;
