@@ -368,9 +368,12 @@ footer{
     .grid {
       display: flex;
       flex-direction: column;
-      justify-content: left;
+      gap: 80px;
       
       
-      margin-top: 70px;
+
+    }
+    .grid div{
+      place-self: start;
     }
   }
