@@ -26,7 +26,7 @@ const LandingPage = ({navigate}) => {
     <body>
       <header className="navbar">
         <div className="logo">
-          <img style={{ width: "180px" }} src={assets.logo} alt="" />
+          <img  src={assets.logo} alt="" />
         </div>
         <nav>
           <ul>

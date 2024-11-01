@@ -31,10 +31,7 @@ body {
     z-index: 100;
   }
   
-  .navbar .logo {
-    font-size: 1.5rem;
-    color: #fff;
-  }
+  
   
   .navbar ul {
     list-style-type: none;
@@ -317,4 +314,63 @@ footer{
   .fade-in.show {
     opacity: 3;
     transform: translateY(0);
+  }
+  .logo img{
+    width: 180px;
+  }
+  @media(max-width:900px){
+    .navbar nav{
+      display: none;
+    }
+    .logo img{
+      width: 120px;
+    }
+    .navbar .btn{
+      width: 80px;
+      font-size: 12px;
+      text-align: center;
+      padding: 8px;
+    }
+    .hero h1{
+      font-size: 30px;
+    }
+    .hero p{
+      font-size: 13px;
+    }
+    .btn-learn-more{
+      background-color: #0098FF;
+       border: none;
+        padding: 10px 15px;
+       color: #0d2b3f;
+       border-radius: 5px;
+       font-size: 13px;
+        cursor: pointer;
+       transition: background-color 0.3s;
+       display: flex;
+       align-items: center;
+       font-size: 17px;
+       font-weight: 500;
+       justify-content: space-between;
+       gap: 11px;
+    }
+    .btn-learn-more img{
+      width: 18px;
+    }
+    .feature-cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .card{
+      width: 80%;
+    }
+    .grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      
+      
+      margin-top: 70px;
+    }
   }
