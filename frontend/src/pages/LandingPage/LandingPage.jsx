@@ -55,9 +55,9 @@ const LandingPage = ({navigate}) => {
           Empowering women with technology to ensure safety and rapid response
           during emergencies.
         </p>
-        <button onClick={()=>{navigate("/home")}} className="btn-learn-more">
+        <a href="http://127.0.0.1:5000/" className="btn-learn-more">
           Get Started <img src={assets.rightIcon} alt="" />
-        </button>
+        </a>
       </section>
 
       <section id="features" className="features">
